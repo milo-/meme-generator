@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: "Karla", sans-serif;
 }
 
 .nav--style {
@@ -22,11 +23,34 @@ background: linear-gradient(to right, #ff9472, #f2709c);
   align-items: flex-start;
 }
 
+.nav--text {
+  color: azure;
+  margin-top: 40px;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  padding: 10px;
+  gap: 17px;
+  font-family: "Karla", sans-serif;
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  border-radius: 5px;
+}
+
 .logo {
   height: 4em;
   padding: 1.5em;
   will-change: filter;
 
+}
+
+.form--input {
+  font-family: "Karla", sans-serif;
+  text-indent: 5px;
 }
 
 .logo:hover {
@@ -36,14 +60,6 @@ background: linear-gradient(to right, #ff9472, #f2709c);
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
@@ -57,4 +73,8 @@ background: linear-gradient(to right, #ff9472, #f2709c);
 
 .read-the-docs {
   color: #888;
+}
+
+.meme-img {
+  max-width: 100%;
 }
